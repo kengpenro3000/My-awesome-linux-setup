@@ -64,8 +64,8 @@ sudo rm -rf ./yay
 ## main pkgs
 
 ``` ;-)
-sudo pacman -Sy godot zed rnote obsidian libreoffice-fresh libreoffice-fresh-ru okular btop telegram-desktop transmission-gtk gnome steam prismlauncher
-yay -S superproductivity-bin happ-desktop-bin zen-browser-bin 
+sudo pacman -Sy godot zed rnote obsidian libreoffice-fresh libreoffice-fresh-ru okular btop telegram-desktop transmission-gtk gnome steam prismlauncher super-productivity
+yay -S happ-desktop-bin zen-browser-bin 
 ```
 
 ## niri
