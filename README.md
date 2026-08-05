@@ -1,9 +1,3 @@
- > **arch linux**
-
-```toc
-```
-
-
 # Packages
 ## fingerprint
 
@@ -79,7 +73,8 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/swaybg -m fill -i \"%h/Pictures/LakeSide.png\" #replace this path with path for yout background image
+ExecStart=/usr/bin/swaybg -c 000000 -i "%h/dots-arch/wallpaper-arghora-formless.jpg" -m center
+#replace this path with path for yout background image
 Restart=on-failure" > ~/.config/systemd/user/swaybg.service
 systemctl --user daemon-reload
 systemctl --user add-wants niri.service swaybg.service
