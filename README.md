@@ -10,32 +10,32 @@
 - libfprint
 - fprintd
 ## niri
--ttf-jetbrains-mono-nerd
--niri
--waybar
--swaybg
--ghostty
--fuzzel
+- ttf-jetbrains-mono-nerd
+- niri
+- waybar
+- swaybg
+- ghostty
+- fuzzel
 ## work
--git
--python
--godot
--super-productivity 
--zed
--rnote
--happ-desktop-bin (aur)
--obsidian
--libreoffice-fresh
--libreoffice-fresh-ru
--okular
--btop
--telegram-desktop
--transmission-gtk
--zen-browser-bin (aur)
+- git
+- python
+- godot
+- super-productivity 
+- zed
+- rnote
+- happ-desktop-bin (aur)
+- obsidian
+- libreoffice-fresh
+- libreoffice-fresh-ru
+- okular
+- btop
+- telegram-desktop
+- transmission-gtk
+- zen-browser-bin (aur)
 ## other pkgs
--gnome
--steam
--prism-launcher
+- gnome
+- steam
+- prism-launcher
 
 # Installation
 
