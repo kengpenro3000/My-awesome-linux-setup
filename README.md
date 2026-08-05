@@ -41,8 +41,7 @@
 
 ## firngerprint
 
-```click-if-you-have-fingerprint
-
+```
 sudo pacman -Sy libfprint fprintd
 fprintd-enroll kengpenro 
 # replace kengpenro with your username
