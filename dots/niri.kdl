@@ -47,6 +47,7 @@ window-rule {
 
 window-rule {
     match app-id="com.mitchellh.ghostty"
+    exclude app-id="com.mitchellh.ghostty.btop"
     open-on-workspace "linux"
 }
 
@@ -71,7 +72,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="dev.zed.Zed" title="niri.kdl — niri.kdl"
+    match app-id="dev.zed.Zed" title="niri.kdl"
     open-on-workspace "linux"
 }
 
@@ -80,6 +81,21 @@ window-rule {
     open-on-workspace "gamedev"
     open-maximized true
 }
+
+window-rule {
+    match app-id="com.mitchellh.ghostty.btop"
+    open-floating true
+    opacity 0.8
+    default-floating-position x=10 y=0 relative-to="top-left"
+    max-height 550
+    max-width 770
+    background-effect{
+        xray false
+        noise 0.8
+    }
+
+}
+
 
 input {
 
@@ -152,7 +168,7 @@ binds {
 
     Mod+N hotkey-overlay-title="Open Rnote" {spawn "rnote";}
     Mod+Shift+O hotkey-overlay-title="Open Libreoffice" {spawn "libreoffice";}
-    Mod+P hotkey-overlay-title="Open Btop++" {spawn-sh "ghostty -e btop";}
+    Mod+P hotkey-overlay-title="Open Btop++" {spawn-sh "ghostty --class=com.mitchellh.ghostty.btop -e btop";}
     Mod+Z hotkey-overlay-title="Open Zen Browser" {spawn "zen-browser";}
     Mod+Shift+X hotkey-overlay-title="Open Super Productivity" { spawn "super-productivity";}
     Mod+G hotkey-overlay-title="Open Godot" {spawn "godot";}
