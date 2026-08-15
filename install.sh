@@ -7,7 +7,7 @@ install_main() {
 
 install_niri() {
     sudo pacman -Sy xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk niri fuzzel waybar swaybg ghostty ttf-jetbrains-mono-nerd
-    echo "include \"~/dots-arch/dots/niri.kdl\""
+    echo "include \"~/dots-arch/dots/niri.kdl\"" > ~/.config/niri/config.kdl
     systemctl --user add-wants niri.service waybar.service
     echo "[Unit]
     PartOf=graphical-session.target
