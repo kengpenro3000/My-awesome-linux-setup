@@ -19,7 +19,6 @@ install_niri() {
     Restart=on-failure" > ~/.config/systemd/user/swaybg.service
     systemctl --user daemon-reload
     systemctl --user add-wants niri.service swaybg.service
-    git clone https://github.com/kengpenro3000/My-awesome-linux-setup ~/dots-arch
     echo "{"include":["~/dots-arch/dots/config"]}" > ~/waybar/config.jsonc
     echo "@import url("$HOME/dots-arch/dots/style.css");" > ~/waybar/stule.css
 }
