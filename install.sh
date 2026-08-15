@@ -14,14 +14,14 @@ install_niri() {
     Requisite=graphical-session.target
 
     [Service]
-    ExecStart=/usr/bin/swaybg -c 000000 -i "%h/dots-arch/wallpaper-arghora-formless.jpg" -m center
+    ExecStart=/usr/bin/swaybg -c 000000 -i \"%h/dots-arch/wallpaper-arghora-formless.jpg\" -m center
     #replace this path with path for yout background image
     Restart=on-failure" > ~/.config/systemd/user/swaybg.service
     systemctl --user daemon-reload
     systemctl --user add-wants niri.service swaybg.service
     mkdir ~/waybar
-    echo "{"include":["~/dots-arch/dots/config"]}" > ~/waybar/config.jsonc
-    echo "@import url("$HOME/dots-arch/dots/style.css");" > ~/waybar/stule.css
+    echo "{\"include\":[\"~/dots-arch/dots/config\"]}" > ~/waybar/config.jsonc
+    echo "@import url(\"$HOME/dots-arch/dots/style.css\");" > ~/waybar/stule.css
 }
 
 install_yay() {
