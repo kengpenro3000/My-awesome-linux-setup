@@ -22,7 +22,7 @@ install_niri() {
     systemctl --user add-wants niri.service swaybg.service
     mkdir -p ~/waybar
     echo "{\"include\":[\"~/dots-arch/dots/config\"]}" > ~/waybar/config.jsonc
-    echo "@import url(\"$HOME/dots-arch/dots/style.css\");" > ~/waybar/stule.css
+    echo "@import url(\"$HOME/dots-arch/dots/style.css\");" > ~/waybar/style.css
 }
 
 install_yay() {
