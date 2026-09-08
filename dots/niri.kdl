@@ -1,8 +1,7 @@
 workspace "daily"
 workspace "study"
-workspace "gamedev"
-workspace "linux"
-workspace "misc"
+workspace "other"
+
 
 
 
@@ -10,12 +9,12 @@ prefer-no-csd
 
 spawn-at-startup "super-productivity"
 spawn-at-startup "happ"
-spawn-sh-at-startup "zen-browser -P gamedev --name zen-gamedev"
-spawn-sh-at-startup "zen-browser -P study --name zen-study"
-spawn-sh-at-startup "zen-browser -P linux --name zen-linux"
-spawn-sh-at-startup "zeditor ./dots-arch/dots/niri.kdl"
-spawn-at-startup "ghostty"
-spawn-at-startup "obsidian"
+// spawn-sh-at-startup "zen-browser -P gamedev --name zen-gamedev"
+// spawn-sh-at-startup "zen-browser -P study --name zen-study"
+// spawn-sh-at-startup "zen-browser -P linux --name zen-linux"
+// spawn-sh-at-startup "zeditor ./dots-arch/dots/niri.kdl"
+// spawn-at-startup "ghostty"
+// spawn-at-startup "obsidian"
 
 
 
@@ -36,51 +35,51 @@ window-rule {
 
 window-rule {
     match app-id="Happ"
-    open-on-workspace "misc"
+    open-on-workspace "daily"
     open-focused true
 }
 
 window-rule {
-    match app-id="com.super_productivity.SuperProductivity"
+    match app-id="superproductivity"
     open-on-workspace "daily"
 }
 
-window-rule {
-    match app-id="com.mitchellh.ghostty"
-    exclude app-id="com.mitchellh.ghostty.btop"
-    open-on-workspace "linux"
-}
+// window-rule {
+//     match app-id="com.mitchellh.ghostty"
+//     exclude app-id="com.mitchellh.ghostty.btop"
+//     open-on-workspace "linux"
+// }
 
-window-rule {
-    match app-id="libreoffice-startcenter"
-    open-on-workspace "study"
-}
+// window-rule {
+//     match app-id="libreoffice-startcenter"
+//     open-on-workspace "study"
+// }
 
-window-rule {
-    match app-id="zen-linux"
-    open-on-workspace "linux"
-}
+// window-rule {
+//     match app-id="zen-linux"
+//     open-on-workspace "linux"
+// }
 
-window-rule {
-    match app-id="zen-gamedev"
-    open-on-workspace "gamedev"
-}
+// window-rule {
+//     match app-id="zen-gamedev"
+//     open-on-workspace "gamedev"
+// }
 
-window-rule {
-    match app-id="zen-study"
-    open-on-workspace "study"
-}
+// window-rule {
+//     match app-id="zen-study"
+//     open-on-workspace "study"
+// }
 
-window-rule {
-    match app-id="dev.zed.Zed" title="niri.kdl"
-    open-on-workspace "linux"
-}
+// window-rule {
+//     match app-id="dev.zed.Zed" title="niri.kdl"
+//     open-on-workspace "linux"
+// }
 
-window-rule {
-    match app-id="Godot"
-    open-on-workspace "gamedev"
-    open-maximized true
-}
+// window-rule {
+//     match app-id="Godot"
+//     open-on-workspace "gamedev"
+//     open-maximized true
+// }
 
 window-rule {
     match app-id="com.mitchellh.ghostty.btop"
