@@ -7,25 +7,25 @@
     "spacing": 8, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "niri/workspaces",
-        "niri/mode",
-        "niri/scratchpad",
-        "custom/media"
+        "niri/workspaces"
+        // "niri/mode"
+        // "niri/scratchpad"
+        // "custom/media"
     ],
     "modules-center": [
-        "niri/window"
+        "wlr/taskbar"
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
-        // "pulseaudio",
+        // "idle_inhibitor",
+        "pulseaudio",
         "network",
         "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
         "backlight",
-        "keyboard-state",
+        // "keyboard-state",
         "niri/language",
         "battery",
         "battery#bat2",
@@ -33,44 +33,38 @@
         "tray",
         "custom/power"
     ],
-    // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
     "niri/workspaces": {
-        "format": "{icon} {windows}",
-        "format-window-separator": " ",
-        "window-rewrite-default": "",
-        "window-rewrite": {
-            "app_id<firefox>": "",
-            "app_id<dolphin>": "",
-            "app_id<org.gnome.Nautilus>": "",
-            "app_id<thunar>": "",
-            "app_id<ghostty>": ""
-        },
+        "all-outputs": false,
+        "format": "{icon}",
         "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "active": "",
-            "default": ""
+            "daily": "⛅",
+            "study": "📚",
+            "other": "🌁",
+            "4": "𝟜",
+            "5": "𝟝",
+            "6": "𝟞",
+            "7": "𝟟"
+
         }
     },
+
+    "wlr/taskbar": {
+      "all-outputs": false,
+      "format": "{icon}",
+      "icon-size": 20,
+      "icon-theme": "Numix-Circle",
+      "tooltip-format": "{title}",
+      "on-click": "activate"
+
+  },
+    // "niri/workspaces": {
+    //   "format": "{icon}",
+    //   "workspace-taskbar": {
+    //     "enable": true,
+    //     "icon-size": 18
+    //   }
+    // },
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
